@@ -7,7 +7,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && mkdir -p /tmp \
     && cd /tmp \
-    && curl -O https://bootstrap.pypa.io/get-pip.py \
+    && curl -O https://bootstrap.pypa.io/pip/2.7/get-pip.py \
     && python get-pip.py \
     && pip install awscli \
     && rm -f /tmp/get-pip.py
